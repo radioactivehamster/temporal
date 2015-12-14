@@ -7,6 +7,9 @@ use Carbon\Carbon;
 
 class Month extends ArrayObject
 {
+    /**
+     * Month constructor.
+     */
     public function __construct()
     {
         $day         = Carbon::now()->startOfMonth();
@@ -14,11 +17,15 @@ class Month extends ArrayObject
         $daysOfMonth = range(1, $daysInMonth);
 
         foreach ($daysOfMonth as $dayOfMonth) {
-            $this->offsetSet($dayOfMonth, clone $day);
+            $this->offsetSet($dayOfMonth, new Day($day));
             $day->addDay();
         }
     }
 
+    /**
+     * @param  $month int
+     * @return string
+     */
     public static function getName($month)
     {
         $months = [
