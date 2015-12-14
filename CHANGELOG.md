@@ -1,20 +1,8 @@
 # Changelog
 
-All Notable changes to `:package_name` will be documented in this file
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-## NEXT - YYYY-MM-DD
+## 0.1.0 - 2015-12-13
 
-### Added
-- Nothing
-
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+- Initial release
