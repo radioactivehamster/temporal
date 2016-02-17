@@ -15,4 +15,9 @@ class CalendarSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Temporal\Calendar');
     }
+
+    function it_should_create_a_day_object()
+    {
+        $this::day()->shouldBeAnInstanceOf('Temporal\Calendar\Day');
+    }
 }
