@@ -59,4 +59,13 @@ class DaySpec extends ObjectBehavior
         $this->ofWeek
              ->shouldReturn(4);
     }
+
+    function it_should_be_the_correct_timestamp_on_the_unix_epoc()
+    {
+        $day = Carbon::createFromDate(1970, 1, 1, 'GMT');
+
+        $this->beConstructedWith($day);
+        $this->timestamp
+             ->shouldReturn('1970-01-01T00:00:00+0000');
+    }
 }
