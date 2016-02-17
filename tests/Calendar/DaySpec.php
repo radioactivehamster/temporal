@@ -15,6 +15,14 @@ class DaySpec extends ObjectBehavior
         $this->shouldHaveType('Temporal\Calendar\Day');
     }
 
+    function it_should_be_the_year_1970_on_the_unix_epoc()
+    {
+        $day = Carbon::createFromDate(1970, 1, 1, 'GMT');
+        $this->beConstructedWith($day);
+        $this->inYear
+             ->shouldReturn(1970);
+    }
+
     function it_should_be_thursday_on_the_first_day_of_the_unix_epoc()
     {
         $day = Carbon::createFromDate(1970, 1, 1, 'GMT');
