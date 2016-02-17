@@ -3,6 +3,7 @@
 namespace Temporal\Calendar;
 
 use Carbon\Carbon;
+use LogicException;
 
 class Day
 {
@@ -56,8 +57,19 @@ class Day
         $this->month     = Month::getName($day->month);
         $this->ofMonth   = $day->day;
         $this->ofWeek    = $day->dayOfWeek;
-        $this->name      = $this->_getName();
+        $this->name      = $this->getName();
         $this->timestamp = $day->toIso8601String();
+    }
+
+    /**
+     * Magic method invoked when cast to string.
+     *
+     * @return string The name of the day.
+     * @link http://php.net/manual/en/language.oop5.magic.php#object.tostring
+     */
+    public function __toString()
+    {
+        return $this->getName();
     }
 
     /**
@@ -65,13 +77,9 @@ class Day
      *
      * @return string
      */
-    protected function _getName()
+    public function getName()
     {
         switch ($this->ofWeek) {
-            case Carbon::SUNDAY:
-                $name = 'Sunday';
-                break;
-
             case Carbon::MONDAY:
                 $name = 'Monday';
                 break;
@@ -96,8 +104,12 @@ class Day
                 $name = 'Saturday';
                 break;
 
+            case Carbon::SUNDAY:
+                $name = 'Sunday';
+                break;
+
             default:
-                $name = '';
+                throw new LogicException;
         }
 
         return $name;
