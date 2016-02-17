@@ -1,6 +1,8 @@
-Temporal [![Build Status][BUILD BADGE]][BUILD PAGE]
-===================================================
+Temporal
+========
 > A date & time utility library for PHP.
+
+[![Packagist Version][PACKAGIST VERSION BADGE]][PACKAGIST PAGE] [![GitHub license][LICENSE BADGE]][LICENSE PAGE] [![Build Status][BUILD BADGE]][BUILD PAGE]
 
 Install
 -------
@@ -33,3 +35,7 @@ The MIT License (Expat). See the [license file](LICENSE) for details.
 
 [BUILD BADGE]: https://travis-ci.org/radioactivehamster/temporal.svg?branch=master
 [BUILD PAGE]: https://travis-ci.org/radioactivehamster/temporal
+[LICENSE BADGE]: https://img.shields.io/github/license/radioactivehamster/temporal.svg
+[LICENSE PAGE]: https://github.com/radioactivehamster/temporal/blob/master/LICENSE
+[PACKAGIST PAGE]: https://packagist.org/packages/radioactivehamster/temporal
+[PACKAGIST VERSION BADGE]: https://img.shields.io/packagist/v/radioactivehamster/temporal.svg
