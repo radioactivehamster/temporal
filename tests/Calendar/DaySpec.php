@@ -64,4 +64,14 @@ class DaySpec extends ObjectBehavior
     {
         assert((string) $this->getWrappedObject() === 'Thursday');
     }
+
+    function it_should_serialize_to_a_json_object()
+    {
+        $json    = json_encode($this->getWrappedObject());
+        $control = '{"inYear":1970,"month":"January","name":"Thursday",' .
+                   '"ofMonth":1,"ofWeek":4,' .
+                   '"timestamp":"1970-01-01T00:00:00+0000","timezone":"GMT"}';
+
+        assert($json === $control);
+    }
 }
