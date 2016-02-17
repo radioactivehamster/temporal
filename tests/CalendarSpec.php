@@ -18,12 +18,12 @@ class CalendarSpec extends ObjectBehavior
 
     function it_should_create_a_day_object()
     {
-        $this::day()->shouldBeAnInstanceOf('Temporal\Calendar\Day');
+        $this::day()->shouldHaveType('Temporal\Calendar\Day');
     }
 
     function it_should_create_a_month_object()
     {
-        $this::month()->shouldBeAnInstanceOf('Temporal\Calendar\Month');
+        $this::month()->shouldHaveType('Temporal\Calendar\Month');
     }
 
     function it_should_create_a_week_object()
