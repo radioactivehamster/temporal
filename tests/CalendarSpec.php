@@ -20,4 +20,9 @@ class CalendarSpec extends ObjectBehavior
     {
         $this::day()->shouldBeAnInstanceOf('Temporal\Calendar\Day');
     }
+
+    function it_should_create_a_month_object()
+    {
+        $this::month()->shouldBeAnInstanceOf('Temporal\Calendar\Month');
+    }
 }
