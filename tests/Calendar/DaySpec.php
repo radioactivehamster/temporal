@@ -59,4 +59,9 @@ class DaySpec extends ObjectBehavior
     {
         $this->timezone->shouldReturn('GMT');
     }
+
+    function it_should_stringify_to_thursday_on_the_unix_epoc()
+    {
+        assert((string) $this->getWrappedObject() === 'Thursday');
+    }
 }
