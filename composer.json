@@ -3,7 +3,7 @@
     "description": "A date & time utility library for PHP.",
     "type": "library",
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.0",
         "nesbot/carbon": "^1.21"
     },
     "license": "MIT",

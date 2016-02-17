@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3567eacb3d8291bc8a2ec8dcd3dbe327",
-    "content-hash": "6d350fc7d3e52ce2013ba465d0e92d6b",
+    "hash": "7c293136cc3d2128a9758bf650562793",
+    "content-hash": "55db2f952b2632a6abe742ecb9d15806",
     "packages": [
         {
             "name": "nesbot/carbon",
@@ -1028,7 +1028,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.5.0"
     },
     "platform-dev": []
 }
