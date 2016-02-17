@@ -40,6 +40,11 @@ class Day
     public $timestamp;
 
     /**
+     * @var string
+     */
+    public $timezone;
+
+    /**
      * Day constructor.
      *
      * @param Carbon $day
@@ -59,6 +64,7 @@ class Day
         $this->ofWeek    = $day->dayOfWeek;
         $this->name      = $this->getName();
         $this->timestamp = $day->toIso8601String();
+        $this->timezone  = $day->timezone->getName();
     }
 
     /**
