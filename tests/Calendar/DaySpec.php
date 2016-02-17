@@ -68,4 +68,13 @@ class DaySpec extends ObjectBehavior
         $this->timestamp
              ->shouldReturn('1970-01-01T00:00:00+0000');
     }
+
+    function it_should_be_set_to_the_gmt_timezone()
+    {
+        $day = Carbon::createFromDate(1970, 1, 1, 'GMT');
+
+        $this->beConstructedWith($day);
+        $this->timezone
+             ->shouldReturn('GMT');
+    }
 }
