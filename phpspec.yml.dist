@@ -1,0 +1,6 @@
+formatter.name: pretty
+suites:
+  temporal_suite:
+    namespace: Temporal
+    psr4_prefix: Temporal
+    spec_prefix: tests
