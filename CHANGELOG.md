@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.0 - 2016-02-17
+
+### Added
+- Added initial test suite.
+- Added Travis CI integration.
+- Implemented the `__toString()` magic method on `Temporal\Calendar\Day`.
+- Added the `Temporal\Calendar\Day::timezone` property.
+
+### Changed
+- Renamed `Temporal\Calendar\Day::_getName()` to `Temporal\Calendar\Day::getName()` and changed it to `public`.
+
 ## 0.2.1 - 2016-02-07
 
 ### Changed
