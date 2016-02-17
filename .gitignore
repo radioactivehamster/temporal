@@ -1,4 +1,4 @@
-.env
-test.php
 /.idea/
 /vendor/
+_scratch.php
+composer.phar

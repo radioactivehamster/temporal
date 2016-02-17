@@ -1,8 +1,9 @@
-; This file is for unifying the coding style for different editors and IDEs.
-; More information at http://editorconfig.org
+# EditorConfig is awesome: <http://editorconfig.org/>
 
+# Top-most EditorConfig file.
 root = true
 
+# Unix-style newlines, 4 space indentation, with a newline ending every file.
 [*]
 charset = utf-8
 indent_size = 4

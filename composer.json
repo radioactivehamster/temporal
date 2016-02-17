@@ -3,14 +3,17 @@
     "description": "A date & time utility library for PHP.",
     "type": "library",
     "require": {
-        "php": ">=5.5.0",
+        "php": "~5.5|~7.0",
         "nesbot/carbon": "^1.21"
     },
+    "homepage": "https://github.com/radioactivehamster/temporal",
     "license": "MIT",
     "authors": [
         {
             "name": "James Benner",
-            "email": "james.benner@gmail.com"
+            "email": "james.benner@gmail.com",
+            "homepage": "http://www.jamesbenner.com/",
+            "role": "Developer"
         }
     ],
     "autoload": {
@@ -20,7 +23,12 @@
     },
     "minimum-stability": "stable",
     "require-dev": {
-        "symfony/var-dumper": "^3.0",
-        "phpspec/phpspec": "^2.4"
+        "fabpot/php-cs-fixer": "^1.11",
+        "phpspec/phpspec": "^2.4",
+        "symfony/var-dumper": "^3.0"
+    },
+    "scripts": {
+        "fix": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/phpspec run"
     }
 }
