@@ -1,5 +1,5 @@
-Temporal
-========
+Temporal [![Build Status][BUILD BADGE]][BUILD PAGE]
+===================================================
 > A date & time utility library for PHP.
 
 Install
@@ -29,4 +29,7 @@ $day = Calendar::day();
 
 License
 -------
-The MIT License (MIT). See the [license file](LICENSE) for details.
+The MIT License (Expat). See the [license file](LICENSE) for details.
+
+[BUILD BADGE]: https://travis-ci.org/radioactivehamster/temporal.svg?branch=master
+[BUILD PAGE]: https://travis-ci.org/radioactivehamster/temporal
