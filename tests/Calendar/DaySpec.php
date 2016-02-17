@@ -33,6 +33,15 @@ class DaySpec extends ObjectBehavior
              ->shouldReturn('January');
     }
 
+    function it_should_be_the_first_month_of_the_year_on_the_unix_epoc()
+    {
+        $day = Carbon::createFromDate(1970, 1, 1, 'GMT');
+
+        $this->beConstructedWith($day);
+        $this->ofMonth
+             ->shouldReturn(1);
+    }
+
     function it_should_be_thursday_on_the_unix_epoc()
     {
         $day = Carbon::createFromDate(1970, 1, 1, 'GMT');
